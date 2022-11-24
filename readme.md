@@ -2,7 +2,7 @@
 
 > URL: <a href="https://ptrcao.github.io/02-Advanced-CSS-02-Challenge/">https://ptrcao.github.io/02-Advanced-CSS-02-Challenge/</a>
 
-The single-page website displays a job candidate's portfoilo in linked card format along with relevant navigational features, information, and links - in order for a prospective employer to evaluate.  The website uses a desktop-first design, but has built-in responsive features which activate at a breakpoint of 793px.  CSS media queries with a `max-width` were used to manage the responsive aspects.  The HTML code was run through an online validator, which cleared it of all validation errors.
+The single-page website displays a job candidate's portfoilo in card grid format along with relevant navigational features, information, and links - in order for a prospective employer to evaluate.  The website uses a desktop-first design, but has built-in responsive features which activate at a breakpoint of 793px.  CSS media queries with a `max-width` were used to manage the responsive aspects.  The HTML code was run through an online validator, which cleared it of all validation errors.
 
 ## Screenshot (>793px wide)
 <img src="assets/Desktop screenshot from 793px.png">

@@ -5,10 +5,10 @@
 The single-page website displays a job candidate's portfoilo in card grid format along with relevant navigational features, information, and links - in order for a prospective employer to evaluate.  The website uses a desktop-first design, but has built-in responsive features which activate at a breakpoint of 776px.  CSS media queries with a `max-width` were used to manage the responsive aspects.  The HTML code was run through an online validator, which cleared it of all validation errors.
 
 ## Screenshot (=<776px wide)
-<img src="assets/Desktop screenshot from 793px.png">
+<img src="./Desktop screenshot.png">
 
 ## Screenshot (>776px wide)
-<img src="assets/Small device screenshot up to 793px.png">
+<img src="./Small device screenshot.png">
 
 ## Acceptance Criteria
 > GIVEN I need to sample a potential employee's previous work

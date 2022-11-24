@@ -217,18 +217,59 @@ main h3{
     grid-gap: 10px;
   }
 
-@media only screen and (max-width: 793px) {
+@media only screen and (max-width: 776px) {
+
+    /* header{width: 100vw;} */
     nav ul li, .contact ul li{
-        display: table;
+        display: block;
+        border-bottom: 0;
         
     }
 
     nav ul li{
-        margin: 10px 10px 10px 90px;
+        /* margin: 0 0 0 0; */
+
     }
 
+    nav, .logo, .header-image {
+        padding: 0 0;
+        
+    }
+    
     .card-tab h4, h5{
         font-size: 85%;
         /* This responsive measure ensures text will not overflow on the smallest of screens */
     }
+
+    main {
+        display: block;
+        /* padding: 10px; */
+    }
+
+    main h3{
+        margin: 10px;
+    }
+
+    body > main > div.contact > ul{
+        margin: 0;
+        padding: 0;
+        text-align: right;
+    }
+
+    header h1{
+        font-size: 150%;
+        top:
+    }
+
+    .avatar{
+        width: 50%;
+        right: 65px;
+        top: 40px;
+    }
+
+    header{
+        grid-template-columns: 2fr 5fr; 
+        grid-template-rows: 3fr 1fr; 
+    }
+
   }

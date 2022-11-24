@@ -1,0 +1,235 @@
+/* Common breakpoints */
+/* https://www.browserstack.com/guide/what-are-css-and-media-query-breakpoints */
+/* https://www.lambdatest.com/blog/how-to-use-css-breakpoints-for-responsive-design/#:~:text=What%20are%20common%20breakpoints%3F,extra%20large%20screens%20like%20TV. */
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header :is(h1, h2, h3, h4, h5, h6){
+    background: #92CCCD;
+    color: #3D4752;
+    display: inline-block;
+}
+
+header h1{
+    position: absolute;
+    padding-left: 40px;
+    padding-right: 10px;
+    left: 0;
+}
+
+.avatar{
+    border-radius: 50%;
+    width: 30%;
+    position: absolute;
+    right: -65px;
+    top: -15px;
+}
+
+.card-tab{
+    position: absolute;
+    background: #93CCCD;
+    color: #3D4752;
+    bottom: 12px;
+    left: 0;
+    padding: 8px;
+}
+
+.card-tab :is(h1, h2, h3, h4, h5, h6){
+    margin: 0;
+}
+
+.card-tab h5{
+    font-weight: 300;
+}
+
+nav{
+    text-align: right;
+    vertical-align: center;
+    background: #31343D;
+    grid-area: navbar;
+}
+
+nav, .logo{
+    background: #31343D;
+}
+
+nav, .logo, .header-image{
+    padding: 0 40px;
+}
+
+nav ul li, .contact ul li{
+    display: inline-block;
+    font-weight: bold;
+
+    margin: 20px;
+}
+
+nav ul li{
+    border-bottom: 2px #93CCCD solid;
+}
+.contact ul li{
+    border-bottom: 2px #435877 solid;
+}
+
+
+nav ul li a, .contact ul li a{
+    text-decoration: none;
+}
+
+nav ul li a{
+    color:#93CCCD;
+}
+
+.contact ul li a{
+color: #435877;
+}
+
+.logo{
+    vertical-align: top;
+    grid-area: logo;
+}
+
+header{
+    display: grid; /* https://youtu.be/uuOXPWCh-6o */
+    grid-template-columns: 2fr 5fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "logo navbar"
+      "hdimage hdimage"; 
+    grid-gap: 0 0;
+}
+
+.header-image{
+    position: relative;
+    background: #1D385D;
+    display: inline-block;
+    grid-area: hdimage;
+    background-image: url("\\assets\\depositphotos_70904187-stock-illustration-tile-sailor-vector-pattern-with.jpg");
+    background-size: contain;
+}
+
+.header-image h2 {
+    /* https://stackoverflow.com/a/9810646/9095603 */
+    position:absolute; 
+    bottom:0; 
+    right: 40px;
+}
+
+main{
+    display: grid; /* https://youtu.be/uuOXPWCh-6o */
+    grid-template-areas:
+        'row-1-hd row-1-hd row-1 row-1 row-1 row-1'
+        'row-2-hd row-2-hd row-2 row-2 row-2 row-2'
+        'row-3-hd row-3-hd row-3 row-3 row-3 row-3';
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+h3.about-me  {
+    grid-area: row-1-hd;
+}
+div.about-me {
+    grid-area: row-1;
+}
+
+h3.work {
+    grid-area: row-2-hd;
+
+}
+div.work{
+    grid-area: row-2;
+}
+
+h3.contact {
+    grid-area: row-3-hd;
+}
+div.contact {
+    grid-area: row-3;
+}
+
+main h3{
+    text-align: right;
+    border-right: #3D5271 solid 2px;
+    color: #3D5271;
+    font-size: 200%;
+    padding: 20px 20px 0 40px;
+    margin: 0;
+}
+
+.card{
+    border: 4px #90C7CA solid;
+    position: relative;
+}
+
+.card a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    /* https://stackoverflow.com/a/16555663/9095603 */
+}
+
+.card a::before:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.large-card{
+    grid-area: large-card;
+    height: 300px;
+    background-image: url("/assets/1000_F_210215884_eiPZhN1xUM9HaIm7Ak1j1sQqPLrvUaiy.jpg");
+    background-size: cover;
+}
+
+.small-card-1 {
+    grid-area: small-card-1;
+    background-image: url("/assets/php-attacks.jpg");
+    background-size: cover;
+}
+.small-card-2 {
+    grid-area: small-card-2;
+    background-image: url("/assets/df7497ca-4699-4ae3-b7d6-585aa136293c.png");
+    background-size: cover;
+}
+.small-card-3 {
+    grid-area: small-card-3;
+    background-image: url("/assets/HTML-and-CSS-interview-questions.jpg");
+    background-size: cover;    
+}
+.small-card-4 {
+    grid-area: small-card-4;
+    background-image: url("/assets/0_aVQR9kZAltUzmu8e.jpeg");
+    background-size: cover;
+    
+}
+
+.small-card{height:100px;}
+
+.container {
+    display: grid; /* https://youtu.be/uuOXPWCh-6o */
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "large-card large-card"
+      "large-card large-card"
+      "large-card large-card"
+      "small-card-1 small-card-2"
+      "small-card-3 small-card-4"; 
+    grid-gap: 10px;
+  }
+
+@media only screen and (max-width: 793px) {
+    nav ul li, .contact ul li{
+        display: table;
+        
+    }
+
+    nav ul li{
+        margin: 10px 10px 10px 90px;
+    }
+
+    .card-tab h4, h5{
+        font-size: 85%;
+        /* This responsive measure ensures text will not overflow on the smallest of screens */
+    }
+  }

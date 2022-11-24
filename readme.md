@@ -40,7 +40,7 @@ THEN that application's image should be larger in size than the others
 > WHEN I click on the images of the applications
 THEN I am taken to that deployed application
 
-&#9745; Since I do not currently have completed projects, I have linked to Google as a placeholder.  These will be updated as the course progresses.
+&#9745; Since I do not currently have completed projects, I have linked to Google, or `#`, as a placeholder.  These will be updated as the course progresses, and beyond.
 
 > WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport

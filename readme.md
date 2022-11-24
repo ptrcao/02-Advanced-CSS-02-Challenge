@@ -4,10 +4,10 @@
 
 The single-page website displays a job candidate's portfoilo in card grid format along with relevant navigational features, information, and links - in order for a prospective employer to evaluate.  The website uses a desktop-first design, but has built-in responsive features which activate at a breakpoint of 776px.  CSS media queries with a `max-width` were used to manage the responsive aspects.  The HTML code was run through an online validator, which cleared it of all validation errors.
 
-## Screenshot (=<776px wide)
+## Screenshot (>776px wide)
 <img src="assets/Desktop screenshot.png">
 
-## Screenshot (>776px wide)
+## Screenshot (=<776px wide)
 <img src="assets/Small device screenshot.png">
 
 ## Acceptance Criteria
@@ -45,4 +45,4 @@ THEN I am taken to that deployed application
 > WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 
-&#9745; Responsive layout has been implemented at breakpoint of 776px.  Primilarly, the navigation links at the top and the bottom are implicated here, as they become transposed on smaller screens.  The grid of cards is responsive by default.
+&#9745; Responsive layout has been implemented at breakpoint of 776px.  At smaller viewport widths, the navigation links at the top and the bottom - as well as the section titles and content blocks - will stack on top of each other.

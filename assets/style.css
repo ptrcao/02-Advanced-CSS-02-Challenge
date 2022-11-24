@@ -107,7 +107,7 @@ header{
     background: #1D385D;
     display: inline-block;
     grid-area: hdimage;
-    background-image: url("assets/depositphotos_70904187-stock-illustration-tile-sailor-vector-pattern-with.jpg");
+    background-image: url("./depositphotos_70904187-stock-illustration-tile-sailor-vector-pattern-with.jpg");
     background-size: contain;
 }
 
@@ -178,28 +178,28 @@ main h3{
 .large-card{
     grid-area: large-card;
     height: 300px;
-    background-image: url("assets/1000_F_210215884_eiPZhN1xUM9HaIm7Ak1j1sQqPLrvUaiy.jpg");
+    background-image: url("./1000_F_210215884_eiPZhN1xUM9HaIm7Ak1j1sQqPLrvUaiy.jpg");
     background-size: cover;
 }
 
 .small-card-1 {
     grid-area: small-card-1;
-    background-image: url("assets/php-attacks.jpg");
+    background-image: url("./php-attacks.jpg");
     background-size: cover;
 }
 .small-card-2 {
     grid-area: small-card-2;
-    background-image: url("assets/df7497ca-4699-4ae3-b7d6-585aa136293c.png");
+    background-image: url("./df7497ca-4699-4ae3-b7d6-585aa136293c.png");
     background-size: cover;
 }
 .small-card-3 {
     grid-area: small-card-3;
-    background-image: url("assets/HTML-and-CSS-interview-questions.jpg");
+    background-image: url("./HTML-and-CSS-interview-questions.jpg");
     background-size: cover;    
 }
 .small-card-4 {
     grid-area: small-card-4;
-    background-image: url("assets/0_aVQR9kZAltUzmu8e.jpeg");
+    background-image: url("./0_aVQR9kZAltUzmu8e.jpeg");
     background-size: cover;
 }
 
